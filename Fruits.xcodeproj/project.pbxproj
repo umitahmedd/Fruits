@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045F75FB2AD087080006A415 /* FruitSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F75FA2AD087080006A415 /* FruitSlide.swift */; };
+		045F75FE2AD08C2D0006A415 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F75FD2AD08C2D0006A415 /* StartButton.swift */; };
+		045F76002AD08CB10006A415 /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F75FF2AD08CB10006A415 /* FirstPage.swift */; };
+		045F76022AD08CC00006A415 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F76012AD08CC00006A415 /* Home.swift */; };
 		04C319972ACF554200E3885B /* FruitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C319962ACF554200E3885B /* FruitsApp.swift */; };
 		04C319992ACF554200E3885B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C319982ACF554200E3885B /* ContentView.swift */; };
 		04C3199B2ACF554400E3885B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C3199A2ACF554400E3885B /* Assets.xcassets */; };
@@ -14,6 +18,8 @@
 		04C319A92ACF554500E3885B /* FruitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C319A82ACF554500E3885B /* FruitsTests.swift */; };
 		04C319B32ACF554500E3885B /* FruitsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C319B22ACF554500E3885B /* FruitsUITests.swift */; };
 		04C319B52ACF554500E3885B /* FruitsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C319B42ACF554500E3885B /* FruitsUITestsLaunchTests.swift */; };
+		04C319C72ACF567A00E3885B /* ProducstsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C319C62ACF567A00E3885B /* ProducstsData.swift */; };
+		04C319C92ACF56DF00E3885B /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C319C82ACF56DF00E3885B /* Fruit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045F75FA2AD087080006A415 /* FruitSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitSlide.swift; sourceTree = "<group>"; };
+		045F75FD2AD08C2D0006A415 /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		045F75FF2AD08CB10006A415 /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
+		045F76012AD08CC00006A415 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		04C319932ACF554200E3885B /* Fruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C319962ACF554200E3885B /* FruitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsApp.swift; sourceTree = "<group>"; };
 		04C319982ACF554200E3885B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +55,8 @@
 		04C319AE2ACF554500E3885B /* FruitsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C319B22ACF554500E3885B /* FruitsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsUITests.swift; sourceTree = "<group>"; };
 		04C319B42ACF554500E3885B /* FruitsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04C319C62ACF567A00E3885B /* ProducstsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProducstsData.swift; sourceTree = "<group>"; };
+		04C319C82ACF56DF00E3885B /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045F75FC2AD08C1E0006A415 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				045F75FD2AD08C2D0006A415 /* StartButton.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		04C3198A2ACF554200E3885B = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +115,10 @@
 		04C319952ACF554200E3885B /* Fruits */ = {
 			isa = PBXGroup;
 			children = (
+				04C319C52ACF55CB00E3885B /* Data */,
+				04C319C42ACF55C100E3885B /* Modal */,
+				04C319C22ACF55AF00E3885B /* View */,
+				04C319C12ACF55A400E3885B /* Component */,
 				04C319962ACF554200E3885B /* FruitsApp.swift */,
 				04C319982ACF554200E3885B /* ContentView.swift */,
 				04C3199A2ACF554400E3885B /* Assets.xcassets */,
@@ -127,6 +151,40 @@
 				04C319B42ACF554500E3885B /* FruitsUITestsLaunchTests.swift */,
 			);
 			path = FruitsUITests;
+			sourceTree = "<group>";
+		};
+		04C319C12ACF55A400E3885B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				045F75FC2AD08C1E0006A415 /* Common */,
+				045F75FA2AD087080006A415 /* FruitSlide.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		04C319C22ACF55AF00E3885B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				045F75FF2AD08CB10006A415 /* FirstPage.swift */,
+				045F76012AD08CC00006A415 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04C319C42ACF55C100E3885B /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				04C319C82ACF56DF00E3885B /* Fruit.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		04C319C52ACF55CB00E3885B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				04C319C62ACF567A00E3885B /* ProducstsData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +317,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045F76002AD08CB10006A415 /* FirstPage.swift in Sources */,
+				045F75FE2AD08C2D0006A415 /* StartButton.swift in Sources */,
+				04C319C92ACF56DF00E3885B /* Fruit.swift in Sources */,
+				045F75FB2AD087080006A415 /* FruitSlide.swift in Sources */,
 				04C319992ACF554200E3885B /* ContentView.swift in Sources */,
+				04C319C72ACF567A00E3885B /* ProducstsData.swift in Sources */,
+				045F76022AD08CC00006A415 /* Home.swift in Sources */,
 				04C319972ACF554200E3885B /* FruitsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
