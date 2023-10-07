@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct Home: View {
+    var fruits: [Fruit] = fruitsData
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            ScrollView{
+                VStack{
+                    ForEach(fruits){ fruit in
+                        Divider()
+                        NavigationLink(destination: FruitOverview(fruit: fruit)){
+                            FruitList(fruit: fruit)
+                                .padding(.vertical, 5)
+                        }
+                    }
+                }
+                .navigationTitle("Fruits")
+                .padding()
+            }
+        }
     }
 }
 
