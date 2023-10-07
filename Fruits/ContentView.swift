@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("showFirstPage") var showFirstPage = true
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack{
+            if showFirstPage {
+                FruitSlider()
+            }
+            else
+            {
+                Home()
+            }
         }
-        .padding()
     }
 }
 
