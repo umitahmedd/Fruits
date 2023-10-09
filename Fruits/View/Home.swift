@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Home: View {
     @AppStorage("showFirstPage") var showFirstPage:Bool = true
+   @State var showSettingsSheet:Bool = false
     var fruits: [Fruit] = fruitsData
     @State var show = false
     var body: some View {
@@ -21,21 +22,30 @@ struct Home: View {
                             FruitList(fruit: fruit)
                                 .padding(.vertical, 5)
                         }
-                        
                     }
                 }
                 .opacity(show ? 1 : 0.2)
                 .navigationTitle("Fruits")
                 .padding()
-                
-                
+                .toolbar{
+                   ToolbarItem(placement: .topBarTrailing) {
+                      Button{
+                         showSettingsSheet = true
+                      }label: {
+                         Image(systemName: "slider.horizontal.3")
+                            .fontWeight(.medium)
+                      }
+                   }
+                }
+                .sheet(isPresented: $showSettingsSheet, content: {
+                   SettingsSheet()
+                })
             }
             .onAppear{
                 withAnimation(.easeOut(duration: 1 )){
                     show = true
                 }
             }
-            
         }
     }
 }
