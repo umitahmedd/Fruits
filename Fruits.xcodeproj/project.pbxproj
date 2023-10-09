@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040F453C2AD48C2500745748 /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F453B2AD48C2500745748 /* SettingsSheet.swift */; };
+		040F453F2AD4904600745748 /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F453E2AD4904600745748 /* SettingsLabelView.swift */; };
+		040F45412AD495F900745748 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F45402AD495F900745748 /* SettingsRowView.swift */; };
 		045F75FB2AD087080006A415 /* FruitSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F75FA2AD087080006A415 /* FruitSlide.swift */; };
 		045F75FE2AD08C2D0006A415 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F75FD2AD08C2D0006A415 /* StartButton.swift */; };
 		045F76002AD08CB10006A415 /* FruitSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F75FF2AD08CB10006A415 /* FruitSlider.swift */; };
@@ -44,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040F453B2AD48C2500745748 /* SettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheet.swift; sourceTree = "<group>"; };
+		040F453E2AD4904600745748 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
+		040F45402AD495F900745748 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		045F75FA2AD087080006A415 /* FruitSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitSlide.swift; sourceTree = "<group>"; };
 		045F75FD2AD08C2D0006A415 /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
 		045F75FF2AD08CB10006A415 /* FruitSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitSlider.swift; sourceTree = "<group>"; };
@@ -92,11 +98,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040F453D2AD4900E00745748 /* SettingsLabelView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SettingsLabelView;
+			sourceTree = "<group>";
+		};
 		045F75FC2AD08C1E0006A415 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				040F453E2AD4904600745748 /* SettingsLabelView.swift */,
 				045F75FD2AD08C2D0006A415 /* StartButton.swift */,
 				045F76032AD177120006A415 /* FruitList.swift */,
+				040F45402AD495F900745748 /* SettingsRowView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -174,6 +189,7 @@
 		04C319C12ACF55A400E3885B /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				040F453D2AD4900E00745748 /* SettingsLabelView */,
 				045F76072AD183590006A415 /* FruitOverview */,
 				045F75FC2AD08C1E0006A415 /* Common */,
 				045F75FA2AD087080006A415 /* FruitSlide.swift */,
@@ -187,6 +203,7 @@
 				045F75FF2AD08CB10006A415 /* FruitSlider.swift */,
 				045F76012AD08CC00006A415 /* Home.swift */,
 				045F76052AD17B8E0006A415 /* FruitOverview.swift */,
+				040F453B2AD48C2500745748 /* SettingsSheet.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -339,6 +356,8 @@
 			files = (
 				045F76002AD08CB10006A415 /* FruitSlider.swift in Sources */,
 				045F76062AD17B8E0006A415 /* FruitOverview.swift in Sources */,
+				040F45412AD495F900745748 /* SettingsRowView.swift in Sources */,
+				040F453C2AD48C2500745748 /* SettingsSheet.swift in Sources */,
 				045F75FE2AD08C2D0006A415 /* StartButton.swift in Sources */,
 				04C319C92ACF56DF00E3885B /* Fruit.swift in Sources */,
 				045F75FB2AD087080006A415 /* FruitSlide.swift in Sources */,
@@ -346,6 +365,7 @@
 				04C319992ACF554200E3885B /* ContentView.swift in Sources */,
 				04C319C72ACF567A00E3885B /* FruitsData.swift in Sources */,
 				045F76022AD08CC00006A415 /* Home.swift in Sources */,
+				040F453F2AD4904600745748 /* SettingsLabelView.swift in Sources */,
 				045F76092AD1836A0006A415 /* SourceLink.swift in Sources */,
 				04C319972ACF554200E3885B /* FruitsApp.swift in Sources */,
 				045F76042AD177120006A415 /* FruitList.swift in Sources */,
