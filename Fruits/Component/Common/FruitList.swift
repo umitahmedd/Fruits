@@ -31,17 +31,18 @@ struct FruitList: View {
                     .fontWeight(.bold)
                 
                 Spacer().frame(height: 5)
-                
+
                 Text("\(fruit.headline)")
                     .font(.caption)
-                    .foregroundStyle(.secondary)
                     .multilineTextAlignment(.leading)
+                    .foregroundStyle(.secondary)
             }
             
             Spacer()
 
             
             Image(systemName: "chevron.right")
+                .foregroundStyle(fruit.gradientColors[1])
         }
     }
 }

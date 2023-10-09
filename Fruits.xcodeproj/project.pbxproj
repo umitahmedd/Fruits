@@ -13,6 +13,8 @@
 		045F76022AD08CC00006A415 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F76012AD08CC00006A415 /* Home.swift */; };
 		045F76042AD177120006A415 /* FruitList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F76032AD177120006A415 /* FruitList.swift */; };
 		045F76062AD17B8E0006A415 /* FruitOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F76052AD17B8E0006A415 /* FruitOverview.swift */; };
+		045F76092AD1836A0006A415 /* SourceLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F76082AD1836A0006A415 /* SourceLink.swift */; };
+		045F760B2AD1869D0006A415 /* FruitNutrients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F760A2AD1869D0006A415 /* FruitNutrients.swift */; };
 		04C319972ACF554200E3885B /* FruitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C319962ACF554200E3885B /* FruitsApp.swift */; };
 		04C319992ACF554200E3885B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C319982ACF554200E3885B /* ContentView.swift */; };
 		04C3199B2ACF554400E3885B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C3199A2ACF554400E3885B /* Assets.xcassets */; };
@@ -48,6 +50,8 @@
 		045F76012AD08CC00006A415 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		045F76032AD177120006A415 /* FruitList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitList.swift; sourceTree = "<group>"; };
 		045F76052AD17B8E0006A415 /* FruitOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitOverview.swift; sourceTree = "<group>"; };
+		045F76082AD1836A0006A415 /* SourceLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLink.swift; sourceTree = "<group>"; };
+		045F760A2AD1869D0006A415 /* FruitNutrients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutrients.swift; sourceTree = "<group>"; };
 		04C319932ACF554200E3885B /* Fruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C319962ACF554200E3885B /* FruitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsApp.swift; sourceTree = "<group>"; };
 		04C319982ACF554200E3885B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +99,15 @@
 				045F76032AD177120006A415 /* FruitList.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		045F76072AD183590006A415 /* FruitOverview */ = {
+			isa = PBXGroup;
+			children = (
+				045F76082AD1836A0006A415 /* SourceLink.swift */,
+				045F760A2AD1869D0006A415 /* FruitNutrients.swift */,
+			);
+			path = FruitOverview;
 			sourceTree = "<group>";
 		};
 		04C3198A2ACF554200E3885B = {
@@ -161,6 +174,7 @@
 		04C319C12ACF55A400E3885B /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				045F76072AD183590006A415 /* FruitOverview */,
 				045F75FC2AD08C1E0006A415 /* Common */,
 				045F75FA2AD087080006A415 /* FruitSlide.swift */,
 			);
@@ -328,9 +342,11 @@
 				045F75FE2AD08C2D0006A415 /* StartButton.swift in Sources */,
 				04C319C92ACF56DF00E3885B /* Fruit.swift in Sources */,
 				045F75FB2AD087080006A415 /* FruitSlide.swift in Sources */,
+				045F760B2AD1869D0006A415 /* FruitNutrients.swift in Sources */,
 				04C319992ACF554200E3885B /* ContentView.swift in Sources */,
 				04C319C72ACF567A00E3885B /* FruitsData.swift in Sources */,
 				045F76022AD08CC00006A415 /* Home.swift in Sources */,
+				045F76092AD1836A0006A415 /* SourceLink.swift in Sources */,
 				04C319972ACF554200E3885B /* FruitsApp.swift in Sources */,
 				045F76042AD177120006A415 /* FruitList.swift in Sources */,
 			);
@@ -492,6 +508,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fruits/Preview Content\"";
+				DEVELOPMENT_TEAM = CPZ788HBN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -504,7 +521,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -528,6 +545,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fruits/Preview Content\"";
+				DEVELOPMENT_TEAM = CPZ788HBN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -540,7 +558,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -563,7 +581,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = umitahmed.com.FruitsTests;
@@ -585,7 +603,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = umitahmed.com.FruitsTests;
@@ -606,7 +624,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = umitahmed.com.FruitsUITests;
@@ -627,7 +645,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1.2;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = umitahmed.com.FruitsUITests;
