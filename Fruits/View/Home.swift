@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct Home: View {
+    @AppStorage("showFirstPage") var showFirstPage:Bool = true
     var fruits: [Fruit] = fruitsData
+    @State var show = false
     var body: some View {
         NavigationView{
             ScrollView{
@@ -19,11 +21,21 @@ struct Home: View {
                             FruitList(fruit: fruit)
                                 .padding(.vertical, 5)
                         }
+                        
                     }
                 }
+                .opacity(show ? 1 : 0.2)
                 .navigationTitle("Fruits")
                 .padding()
+                
+                
             }
+            .onAppear{
+                withAnimation(.easeOut(duration: 1 )){
+                    show = true
+                }
+            }
+            
         }
     }
 }
