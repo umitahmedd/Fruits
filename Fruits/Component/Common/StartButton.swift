@@ -9,10 +9,14 @@ import SwiftUI
 
 struct StartButton: View {
     @AppStorage("showFirstPage") var showFirstPage:Bool = true
+    @State var feedbackGenerator = UINotificationFeedbackGenerator()
     var body: some View {
         VStack{
             Button{
-                showFirstPage = false
+                withAnimation(.easeOut(duration: 1)){
+                    feedbackGenerator.notificationOccurred(.success)
+                    showFirstPage = false
+                }
             }label: {
                 HStack{
                     Text("Start")
