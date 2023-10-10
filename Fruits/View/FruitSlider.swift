@@ -1,5 +1,5 @@
 //
-//  FIrstPage.swift
+//  FruitSlider.swift
 //  Fruits
 //
 //  Created by mac on 6.10.2023.

@@ -98,13 +98,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		040F453D2AD4900E00745748 /* SettingsLabelView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SettingsLabelView;
-			sourceTree = "<group>";
-		};
 		045F75FC2AD08C1E0006A415 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,7 +182,6 @@
 		04C319C12ACF55A400E3885B /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				040F453D2AD4900E00745748 /* SettingsLabelView */,
 				045F76072AD183590006A415 /* FruitOverview */,
 				045F75FC2AD08C1E0006A415 /* Common */,
 				045F75FA2AD087080006A415 /* FruitSlide.swift */,

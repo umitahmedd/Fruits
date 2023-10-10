@@ -21,6 +21,8 @@ struct SettingsSheet: View {
       NavigationView{
          ScrollView(.vertical, showsIndicators: false){
             VStack(spacing: 20){
+              
+            // MARK: HEAD
                GroupBox {
                   Divider( ).padding(.vertical, 4)
                   HStack(spacing: 20){
@@ -38,6 +40,7 @@ struct SettingsSheet: View {
                   SettingsLabelView(labelText: "Fruits", labelIcon: "info.circle")
                }
                
+              // MARK: APPLICATION INFO
                GroupBox {
                   ForEach(settingsRows, id:\.name){ row in
                      Divider( ).padding(.vertical, 4)
@@ -49,6 +52,7 @@ struct SettingsSheet: View {
                }
             }
             .toolbar{
+              // CLOSE BUTTON
                ToolbarItem(placement: .topBarTrailing) {
                   Button{
                      presentationMode.wrappedValue.dismiss()

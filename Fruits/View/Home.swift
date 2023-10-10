@@ -15,6 +15,8 @@ struct Home: View {
     var body: some View {
         NavigationView{
             ScrollView{
+               
+               // MARK: FRUIT LIST
                 VStack{
                     ForEach(fruits){ fruit in
                         Divider()
@@ -28,6 +30,8 @@ struct Home: View {
                 .navigationTitle("Fruits")
                 .padding()
                 .toolbar{
+                   
+                   // SETTINGS BUTTON
                    ToolbarItem(placement: .topBarTrailing) {
                       Button{
                          showSettingsSheet = true

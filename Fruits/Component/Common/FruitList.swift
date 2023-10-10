@@ -8,45 +8,47 @@
 import SwiftUI
 
 struct FruitList: View {
-    var fruit:Fruit
-    var body: some View {
-        HStack(spacing:20){
-            Image("\(fruit.image)")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 80, height: 80)
-                .background(
-                    LinearGradient(
-                        gradient:
-                            Gradient(colors: [fruit.gradientColors[0], fruit.gradientColors[1]]),
-                        startPoint:.top, endPoint:.bottom
-                    )
-                )
-                .cornerRadius(10)
-            
-            
-            VStack(alignment: .leading){
-                Text("\(fruit.title)")
-                    .font(.title)
-                    .fontWeight(.bold)
-                
-                Spacer().frame(height: 5)
-
-                Text("\(fruit.headline)")
-                    .font(.caption)
-                    .multilineTextAlignment(.leading)
-                    .foregroundStyle(.secondary)
-            }
-            
-            Spacer()
-
-            
-            Image(systemName: "chevron.right")
-                .foregroundStyle(fruit.gradientColors[1])
-        }
+  var fruit:Fruit
+  var body: some View {
+    HStack(spacing:20){
+      
+      // IMAGE
+      Image("\(fruit.image)")
+        .resizable()
+        .scaledToFit()
+        .frame(width: 80, height: 80)
+        .background(
+          LinearGradient(
+            gradient:
+              Gradient(colors: [fruit.gradientColors[0], fruit.gradientColors[1]]),
+            startPoint:.top, endPoint:.bottom
+          )
+        )
+        .cornerRadius(10)
+      
+      // TEXT
+      VStack(alignment: .leading){
+        Text("\(fruit.title)")
+          .font(.title)
+          .fontWeight(.bold)
+        
+        Spacer().frame(height: 5)
+        
+        Text("\(fruit.headline)")
+          .font(.caption)
+          .multilineTextAlignment(.leading)
+          .foregroundStyle(.secondary)
+      }
+      
+      Spacer()
+      
+      // NAVIGATION ICON 
+      Image(systemName: "chevron.right")
+        .foregroundStyle(fruit.gradientColors[1])
     }
+  }
 }
 
 #Preview {
-    FruitList(fruit: fruitsData[0])
+  FruitList(fruit: fruitsData[0])
 }

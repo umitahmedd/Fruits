@@ -20,6 +20,7 @@ struct StartButton: View {
             }label: {
                 HStack{
                     Text("Start")
+                  
                     Image(systemName: "arrow.right.circle")
                 }
                 .padding(.vertical, 10)

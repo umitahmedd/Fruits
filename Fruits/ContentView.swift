@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-   @AppStorage("showFirstPage") var showFirstPage = true
-   var body: some View {
-      ZStack{
-         if showFirstPage {
-            FruitSlider()
-         }
-         else
-         {
-            Home()
-         }
+  @AppStorage("showFirstPage") var showFirstPage = true
+  var body: some View {
+    ZStack{
+      if showFirstPage {
+        FruitSlider()
       }
-   }
+      else
+      {
+        Home()
+      }
+    }
+  }
 }
 
 #Preview {
-   ContentView()
+  ContentView()
 }
