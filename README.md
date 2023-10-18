@@ -4,6 +4,9 @@ This simple application is a SwiftUI-based mobile app that provides users with i
 
 To use and modify the app, you need to have knowledge of Swift and SwiftUI.
 
+## Preview
+![eee](https://github.com/umitahmedd/Fruits/assets/135972028/8b1c5ef9-1548-4ab5-8c5d-838a8e37e0ac)
+
 ## Usage
 
 To get started and view fruit information, follow the steps below:
@@ -16,4 +19,3 @@ To get started and view fruit information, follow the steps below:
 ## Dependencies
 This application uses Swift and SwiftUI and does not require any specific external dependencies.
 
-![application](https://github.com/umitahmedd/Fruits/assets/135972028/15b7806a-eacb-4bed-808b-6fdfe369c89f)
