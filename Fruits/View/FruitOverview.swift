@@ -25,7 +25,7 @@ struct FruitOverview: View {
     NavigationView{
       ZStack{
         ScrollView(.vertical, showsIndicators: false){
-          VStack(alignment: .leading){
+          VStack(alignment: .center){
             
             // MARK: HEAD
             ZStack{
@@ -114,6 +114,7 @@ struct FruitOverview: View {
               SourceLink()
             }
             .padding()
+            .frame(maxWidth: 540)
           }
         }
         .edgesIgnoringSafeArea(.top)
