@@ -125,6 +125,8 @@ struct FruitOverview: View {
       }
     }
     .navigationBarTitleDisplayMode(.inline)
+    .navigationViewStyle(StackNavigationViewStyle())
+
   }
 }
 
