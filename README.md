@@ -5,10 +5,9 @@ This simple application is a SwiftUI-based mobile app that provides users with i
 To use and modify the app, you need to have knowledge of Swift and SwiftUI.
 
 ## Preview
-![eee](https://github.com/umitahmedd/Fruits/assets/135972028/8b1c5ef9-1548-4ab5-8c5d-838a8e37e0ac)
+![eee 2](https://github.com/umitahmedd/Fruits/assets/135972028/2fbb09a6-c788-4427-886f-b8b9c94ee37d)
 
 ## Usage
-
 To get started and view fruit information, follow the steps below:
 
 1. Clone the application to your local machine.
