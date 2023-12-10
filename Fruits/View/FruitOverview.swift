@@ -13,7 +13,7 @@ extension View {
       .offset(y: yOffset)
       .opacity(opacity)
       .animation(
-        Animation.easeOut(duration: 0.7).delay(Double(delay)),
+        Animation.easeIn(duration: 0.4).delay(Double(delay)),
         value: value
       )
   }
@@ -42,7 +42,12 @@ struct FruitOverview: View {
                 .padding(.vertical, 20)
             }
             .frame(height: 440)
-            .offset(x: isAnimation ? 0 : 300)
+            .boardAnimation(
+              delay: 0.2,
+              yOffset: isAnimation ? 0 : -100,
+              opacity: isAnimation ? 1 : 0,
+              value: isAnimation
+            )
             
             // MARK: BODY
             VStack(alignment: .leading, spacing: 20){
